@@ -1,0 +1,59 @@
+# Diffusion Models
+
+Diffusion alignment treats the reverse denoising process as an optimization interface. Depending on the feedback, methods either optimize scalar terminal rewards over trajectories, adapt preference objectives to denoising paths, or use differentiable rewards and distillation to steer faster generators.
+
+## 1.1 Trajectory-Level Scalar-Reward Optimization
+
+- **AdaDiff**: Adaptive Step Selection for Fast Diffusion Models [[Paper]](https://arxiv.org/abs/2411.14768) <sub>![AAAI 2025](https://img.shields.io/badge/AAAI-2025-blue) Diffusion · Scalar Reward · Reward-Weighted Likelihood · Step Selection</sub>
+- **DPOK**: Reinforcement Learning for Fine-tuning Text-to-Image Diffusion Models [[Paper]](https://arxiv.org/abs/2305.16381) [[Code]](https://github.com/google-research/google-research/tree/master/dpok) <sub>![NeurIPS 2023](https://img.shields.io/badge/NeurIPS-2023-blue) Diffusion · Scalar Reward · Policy Gradient · Full Trajectory</sub>
+- **DDPO**: Training Diffusion Models with Reinforcement Learning [[Paper]](https://openreview.net/forum?id=YCWjhGrJFD) [[Code]](https://github.com/kvablack/ddpo-pytorch) <sub>![ICLR 2024](https://img.shields.io/badge/ICLR-2024-blue) Diffusion · Scalar Reward · Policy Gradient · Full Trajectory</sub>
+- **RLCM**: RL for Consistency Models: Reward Guided Text-to-Image Generation with Fast Inference [[Paper]](https://openreview.net/forum?id=PEr4d7d7nE) [[Project]](https://rlcm.owenoertell.com/) <sub>![RLC 2024](https://img.shields.io/badge/RLC-2024-blue) Diffusion · Scalar Reward · Policy Gradient · Full Trajectory</sub>
+- **Large-RL**: Large-Scale Reinforcement Learning for Diffusion Models [[Paper]](https://arxiv.org/abs/2401.12244) <sub>![ECCV 2024](https://img.shields.io/badge/ECCV-2024-blue) Diffusion · Scalar Reward · Policy Gradient · Full Trajectory</sub>
+- **Noise PPO**: A Minimalist Method for Fine-tuning Text-to-Image Diffusion Models [[Paper]](https://arxiv.org/abs/2506.12036) <sub>![arXiv 2025](https://img.shields.io/badge/arXiv-2025-lightgrey) Diffusion · Scalar Reward · PPO · Initial Noise</sub>
+- **LOOP**: A Simple and Effective Reinforcement Learning Method for Text-to-Image Diffusion Fine-Tuning [[Paper]](https://arxiv.org/abs/2503.00897) <sub>![TMLR 2026](https://img.shields.io/badge/TMLR-2026-blue) Diffusion · Scalar Reward · PPO · Full Trajectory</sub>
+- **DPG-T2I**: Powerful and Flexible: Personalized Text-to-Image Generation via Reinforcement Learning [[Paper]](https://arxiv.org/abs/2407.12928) [[Code]](https://github.com/wfanyue/DPG-T2I-Personalization) <sub>![ECCV 2024](https://img.shields.io/badge/ECCV-2024-blue) Diffusion · Scalar Reward · DPG · Full Trajectory</sub>
+- **LaSRO**: Reward Fine-Tuning Two-Step Diffusion Models via Learning Differentiable Latent-Space Surrogate Reward [[Paper]](https://arxiv.org/abs/2503.22561) [[Project]](https://sites.google.com/view/lasro) <sub>![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue) Diffusion · Scalar Reward · Actor-Critic · Latent</sub>
+- **RLD**: Training Diffusion Models towards Diverse Image Generation with Reinforcement Learning [[Paper]](https://arxiv.org/abs/2408.16516) <sub>![CVPR 2024](https://img.shields.io/badge/CVPR-2024-blue) Diffusion · Scalar Reward · Policy Gradient · Full Trajectory</sub>
+- **Parrot**: Pareto-Optimal Multi-Reward Reinforcement Learning Framework for Text-to-Image Generation [[Paper]](https://arxiv.org/abs/2401.05675) [[Project]](https://huggingface.co/spaces/parrot-multi-reward/Parrot) <sub>![ECCV 2024](https://img.shields.io/badge/ECCV-2024-blue) Diffusion · Multi-Reward Scalar · Policy Gradient · Prompt + T2I</sub>
+
+## 1.2 Preference-Based Diffusion Alignment
+
+- **Diffusion-DPO**: Diffusion Model Alignment Using Direct Preference Optimization [[Paper]](https://arxiv.org/abs/2311.12908) [[Code]](https://github.com/SalesforceAIResearch/DiffusionDPO) <sub>![CVPR 2024](https://img.shields.io/badge/CVPR-2024-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **D3PO**: Using Human Feedback to Fine-Tune Diffusion Models without Any Reward Model [[Paper]](https://arxiv.org/abs/2311.13231) [[Code]](https://github.com/yk7333/D3PO) <sub>![CVPR 2024](https://img.shields.io/badge/CVPR-2024-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **Dense Reward DPO**: A Dense Reward View on Aligning Text-to-Image Diffusion with Preference [[Paper]](https://arxiv.org/abs/2402.08265) <sub>![ICML 2024](https://img.shields.io/badge/ICML-2024-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **Inv-DPO**: Inversion-DPO: Precise and Efficient Post-Training for Diffusion Models [[Paper]](https://arxiv.org/abs/2503.13568) [[Code]](https://github.com/MIGHTYEZ/Inversion-DPO) <sub>![ACM MM 2025](https://img.shields.io/badge/ACM%20MM-2025-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **DSPO**: Direct Score Preference Optimization for Diffusion Model Alignment [[Paper]](https://openreview.net/forum?id=xyfb3HHvMe) <sub>![ICLR 2025](https://img.shields.io/badge/ICLR-2025-blue) Diffusion · Pairwise Preference · DPO · Truncated</sub>
+- **DDIM-InPO**: Inversion Preference Optimization with Reparametrized DDIM for Efficient Diffusion Model Alignment [[Paper]](https://arxiv.org/abs/2505.04302) <sub>![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue) Diffusion · Pairwise Preference · DPO · Latent</sub>
+- **IAPO**: Instance-Aware Preference Optimization for Aligning Diffusion Models [[Paper]](https://arxiv.org/abs/2601.03737) <sub>![CVPR 2026](https://img.shields.io/badge/CVPR-2026-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **SPO**: Step-by-Step Preference Optimization for Aesthetic Post-Training [[Paper]](https://arxiv.org/abs/2503.17045) [[Code]](https://github.com/RockeyCoss/SPO) <sub>![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue) Diffusion · Pairwise Preference · DPO · Truncated</sub>
+- **LPO**: Diffusion Model as a Noise-Aware Latent Reward Model for Step-Level Preference Optimization [[Paper]](https://arxiv.org/abs/2504.09051) [[Code]](https://github.com/casiatao/LPO) <sub>![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-blue) Diffusion · Pairwise Preference · DPO · Latent</sub>
+- **RPO**: Subject-Driven Text-to-Image Generation via Preference-Based Reinforcement Learning [[Paper]](https://arxiv.org/abs/2406.09418) <sub>![NeurIPS 2024](https://img.shields.io/badge/NeurIPS-2024-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **CaPO**: Calibrated Multi-Preference Optimization for Aligning Diffusion Models [[Paper]](https://arxiv.org/abs/2505.18739) <sub>![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **VideoDPO**: Omni-Preference Alignment for Video Diffusion Generation [[Paper]](https://arxiv.org/abs/2412.14167) [[Project]](https://videodpo.github.io/) <sub>![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **DenseDPO**: Fine-Grained Temporal Preference Optimization for Video Diffusion Models [[Paper]](https://arxiv.org/abs/2505.20712) <sub>![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **IterComp**: Iterative Composition-Aware Feedback Learning from Model Gallery for Text-to-Image Generation [[Paper]](https://arxiv.org/abs/2410.07171) [[Code]](https://github.com/YangLing0818/IterComp) <sub>![ICLR 2025](https://img.shields.io/badge/ICLR-2025-blue) Diffusion · Pairwise Preference · DPO · Truncated</sub>
+- **RankDPO**: Scalable Ranked Preference Optimization for Text-to-Image Generation [[Paper]](https://arxiv.org/abs/2503.12325) <sub>![ICCV 2025](https://img.shields.io/badge/ICCV-2025-blue) Diffusion · Ranked Preference · DPO · Full Trajectory</sub>
+- **Self-NPO**: Data-Free Diffusion Model Enhancement via Truncated Diffusion Fine-Tuning [[Paper]](https://arxiv.org/abs/2411.19996) <sub>![AAAI 2026](https://img.shields.io/badge/AAAI-2026-blue) Diffusion · Self-Negative Preference · DPO · Truncated</sub>
+- **Curriculum DPO**: Curriculum Direct Preference Optimization for Diffusion and Consistency Models [[Paper]](https://arxiv.org/abs/2503.10248) <sub>![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue) Diffusion · Pairwise Preference · DPO · Truncated</sub>
+- **SmPO**: Smoothed Preference Optimization via Renoise Inversion for Aligning Diffusion Models [[Paper]](https://arxiv.org/abs/2506.00548) [[Project]](https://jaydenlyh.github.io/SmPO-project-page/) <sub>![ICML 2025](https://img.shields.io/badge/ICML-2025-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **PatchDPO**: Patch-Level DPO for Finetuning-Free Personalized Image Generation [[Paper]](https://arxiv.org/abs/2504.07510) [[Code]](https://github.com/hqhQAQ/PatchDPO) <sub>![CVPR 2025](https://img.shields.io/badge/CVPR-2025-blue) Diffusion · Pairwise Preference · DPO · Full Trajectory</sub>
+- **Diff-KTO**: Aligning Diffusion Models by Optimizing Human Utility [[Paper]](https://arxiv.org/abs/2409.14146) <sub>![NeurIPS 2024](https://img.shields.io/badge/NeurIPS-2024-blue) Diffusion · Binary Feedback · KTO · Full Trajectory</sub>
+- **CRAFT**: Aligning Diffusion Models with Fine-Tuning Is Easier Than You Think [[Paper]](https://arxiv.org/abs/2509.02081) <sub>![CVPR 2026](https://img.shields.io/badge/CVPR-2026-blue) Diffusion · Scalar Reward · SFT · Data Filtering</sub>
+
+## 1.3 Reward-Guided Fine-Tuning and Distillation
+
+- **ReFL**: ImageReward: Learning and Evaluating Human Preferences for Text-to-Image Generation [[Paper]](https://arxiv.org/abs/2304.05977) [[Code]](https://github.com/zai-org/ImageReward) <sub>![NeurIPS 2023](https://img.shields.io/badge/NeurIPS-2023-blue) Diffusion · Scalar Reward · Reward Feedback Learning · Truncated</sub>
+- **DRaFT**: Directly Fine-Tuning Diffusion Models on Differentiable Rewards [[Paper]](https://arxiv.org/abs/2309.17400) <sub>![ICLR 2024](https://img.shields.io/badge/ICLR-2024-blue) Diffusion · Scalar Reward · Reward Backpropagation · Truncated</sub>
+- **RSA-FT**: Reward Sharpness-Aware Fine-Tuning for Diffusion Models [[Paper]](https://arxiv.org/abs/2603.21175) <sub>![CVPR 2026](https://img.shields.io/badge/CVPR-2026-blue) Diffusion · Scalar Reward · Reward Backpropagation · Truncated/Full</sub>
+- **RG-LCD**: Reward Guided Latent Consistency Distillation [[Paper]](https://arxiv.org/abs/2404.05968) <sub>![TMLR 2024](https://img.shields.io/badge/TMLR-2024-blue) Diffusion · Scalar Reward · Consistency Distillation · Student Model</sub>
+- **T2V-Turbo**: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback [[Paper]](https://arxiv.org/abs/2405.18750) [[Project]](https://t2v-turbo.github.io/) <sub>![NeurIPS 2024](https://img.shields.io/badge/NeurIPS-2024-blue) Diffusion · Mixed Reward · Distillation · Student Model</sub>
+- **Diff-Instruct++**: Training One-Step Text-to-Image Generator Model to Align with Human Preferences [[Paper]](https://arxiv.org/abs/2410.18881) <sub>![TMLR 2025](https://img.shields.io/badge/TMLR-2025-blue) Diffusion · Preference · Distillation · One-Step</sub>
+- **Reward-Instruct**: A Reward-Centric Approach to Fast Photo-Realistic Image Generation [[Paper]](https://arxiv.org/abs/2503.13070) <sub>![arXiv 2025](https://img.shields.io/badge/arXiv-2025-lightgrey) Diffusion · Scalar Reward · Reward-Centric Training · Fast Generation</sub>
+
+## Practical Notes
+
+| Issue | Recommendation |
+| --- | --- |
+| Reward hacking | Track held-out rewards, diagnostics, and qualitative failures. |
+| Credit assignment | Compare full-trajectory, truncated, latent, and step-level objectives separately. |
+| Drift from base model | Use reference regularization and prompt-family audits. |
