@@ -3,17 +3,18 @@
 ![Resource List](https://img.shields.io/badge/Resource%20List-RL%20for%20Visual%20Generation-blue)
 ![Maintained](https://img.shields.io/badge/Maintained-yes-brightgreen)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-blue)
-![Paper Coming Soon](https://img.shields.io/badge/Paper-Coming%20soon-lightgrey)
-![TechRxiv Coming Soon](https://img.shields.io/badge/TechRxiv-Coming%20soon-lightgrey)
+[![Paper](https://img.shields.io/badge/Paper-OpenReview-blue)](https://openreview.net/forum?id=f6dJtY9Z7u)
 
 Curated resources for reinforcement learning in visual generation.
+
+📄 The public preprint is available on [OpenReview](https://openreview.net/forum?id=f6dJtY9Z7u).
 
 This repository organizes public papers, code, projects, reward models, and benchmarks by the generative-model interface through which feedback is applied: diffusion, flow matching, autoregressive visual generation, GAN/VAE-style latent generators, reward models, and evaluation benchmarks.
 
 ## Updates
 
 - **2026.06**: Expanded public preview with verified paper, code, and project links where official sources are available.
-- **Coming soon**: Paper and TechRxiv links will be added after public release.
+- **2026.06**: Public preprint link added.
 
 ## Taxonomy Overview
 
@@ -247,7 +248,6 @@ VLM/MLLM-based judges are treated here as an evaluator family. Concrete reward m
 
 ## Citation
 
-Paper: Coming soon  
-TechRxiv: Coming soon
+Citation information will be updated once the bibliographic record is finalized.
 
-For now, please cite the individual papers, datasets, models, and codebases that you use.
+Public preprint: [OpenReview](https://openreview.net/forum?id=f6dJtY9Z7u)
