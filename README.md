@@ -243,7 +243,7 @@ VLM/MLLM-based judges are treated here as an evaluator family. Concrete reward m
 | Use pairwise preferences for diffusion | Diffusion-DPO, D3PO, DSPO, SPO, CaPO |
 | Align deterministic flow models | PFM, Flow-DPO, ORW-CFM-W2, Flow-GRPO |
 | Optimize autoregressive visual tokens | SimpleAR, VAR-GRPO, GCPO, T2I-R1 |
-| Align unified multimodal generators | HermesFlow, CoRL, SUDER, UniRL, X-Omni |
+| Align unified multimodal generators | HermesFlow, CoRL, SUDER, UniRL, VeRL-Omni, X-Omni |
 | Build a reward/evaluation stack | PickScore, HPSv2, ImageReward, GenEval, T2I-CompBench, VBench, VLM/MLLM judges |
 
 ## Citation
