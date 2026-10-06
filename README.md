@@ -111,6 +111,7 @@ This repository organizes public papers, code, projects, reward models, and benc
 
 ### 2.2 Online RL in Deterministic Flows
 
+- **MEND**: RL For Flow Models via Proximal Velocity Matching [[Paper]](https://arxiv.org/abs/2610.05954) [[Code]](https://github.com/shreshthsaini/MEND-RL) [[Project]](https://shreshthsaini.github.io/MEND-RL/) <sub>![arXiv 2026](https://img.shields.io/badge/arXiv-2026-lightgrey) Flow Matching · Scalar Reward · Proximal Velocity Matching · Velocity Targets</sub>
 - **ORW-CFM-W2**: Online Reward-Weighted Fine-Tuning of Flow Matching with Wasserstein Regularization [[Paper]](https://openreview.net/forum?id=DspGEmu1zp) <sub>![ICLR 2025](https://img.shields.io/badge/ICLR-2025-blue) Flow Matching · Scalar Reward · Reward-Weighted Regression · Full Trajectory</sub>
 - **Flow-GRPO**: Training Flow Matching Models via Online RL [[Paper]](https://arxiv.org/abs/2505.05470) [[Code]](https://github.com/yifan123/flow_grpo) <sub>![NeurIPS 2025](https://img.shields.io/badge/NeurIPS-2025-blue) Flow Matching · Scalar Reward · GRPO · Full Trajectory</sub>
 - **TempFlow-GRPO**: When Timing Matters for GRPO in Flow Models [[Paper]](https://openreview.net/forum?id=ycKbfmJ4cV) <sub>![ICLR 2026](https://img.shields.io/badge/ICLR-2026-blue) Flow Matching · Scalar Reward · GRPO · Truncated</sub>

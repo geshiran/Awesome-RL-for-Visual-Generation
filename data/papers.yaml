@@ -601,6 +601,20 @@ papers:
     code: ""
     project: "https://wwenxu.github.io/RDPO/"
 
+  - short_name: MEND
+    title: "RL For Flow Models via Proximal Velocity Matching"
+    year: "2026"
+    venue: "arXiv"
+    paradigm: "flow_matching"
+    category: "online_rl_deterministic_flows"
+    feedback: "scalar"
+    rl_type: "proximal_velocity_matching"
+    scope: "velocity_targets"
+    task: "text_to_image"
+    paper: "https://arxiv.org/abs/2610.05954"
+    code: "https://github.com/shreshthsaini/MEND-RL"
+    project: "https://shreshthsaini.github.io/MEND-RL/"
+
   - short_name: ORW-CFM-W2
     title: "Online Reward-Weighted Fine-Tuning of Flow Matching with Wasserstein Regularization"
     year: "2025"
